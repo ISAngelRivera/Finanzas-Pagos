@@ -1,0 +1,52 @@
+# Configuración del repositorio de dominio
+# Este archivo define metadata y políticas para este dominio/subdominio
+
+domain: Finanzas
+subdomain: Pagos
+
+# Responsables del dominio
+owners:
+  - name: Equipo Finanzas
+    email: finanzas-pagos@example.com
+    role: Domain Owner
+
+# Notificaciones (futuro)
+notifications:
+  slack:
+    enabled: false
+    channel: "#finanzas-pagos-apis"
+  email:
+    enabled: true
+    recipients:
+      - finanzas-pagos@example.com
+
+# Políticas por defecto por entorno
+default_policies:
+  uat:
+    rate_limiting: Gold
+    require_approval: false
+  nft:
+    rate_limiting: Gold
+    require_approval: true
+    approvers:
+      - qa-team
+      - finanzas-security
+  pro:
+    rate_limiting: Unlimited
+    require_approval: true
+    approvers:
+      - qa-team
+      - finanzas-security
+      - cab-board
+
+# Configuración de endpoints por entorno
+environments:
+  uat:
+    gateway_url: https://api-uat.example.com
+    devportal_url: https://portal-uat.example.com
+  nft:
+    gateway_url: https://api-nft.example.com
+    devportal_url: https://portal-nft.example.com
+  pro:
+    gateway_url: https://api.example.com
+    devportal_url: https://portal.example.com
