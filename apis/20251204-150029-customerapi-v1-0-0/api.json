@@ -1,0 +1,198 @@
+{
+  "type": "api",
+  "version": "v4.5.0",
+  "data": {
+    "id": "4de288cc-7480-48c8-9702-72d4f71656dc",
+    "name": "CustomerAPI",
+    "description": "API de gestión de clientes",
+    "context": "/customers",
+    "version": "1.0.0",
+    "provider": "admin",
+    "lifeCycleStatus": "PUBLISHED",
+    "responseCachingEnabled": false,
+    "cacheTimeout": 300,
+    "hasThumbnail": false,
+    "isDefaultVersion": false,
+    "isRevision": false,
+    "revisionId": 0,
+    "enableSchemaValidation": false,
+    "enableSubscriberVerification": false,
+    "type": "HTTP",
+    "audiences": [
+      "all"
+    ],
+    "transport": [
+      "http",
+      "https"
+    ],
+    "tags": [],
+    "policies": [
+      "Unlimited"
+    ],
+    "organizationPolicies": [],
+    "authorizationHeader": "Authorization",
+    "apiKeyHeader": "ApiKey",
+    "securityScheme": [
+      "oauth_basic_auth_api_key_mandatory",
+      "oauth2"
+    ],
+    "visibility": "PUBLIC",
+    "visibleRoles": [],
+    "visibleTenants": [],
+    "visibleOrganizations": [
+      "carbon.super"
+    ],
+    "mediationPolicies": [],
+    "subscriptionAvailability": "CURRENT_TENANT",
+    "subscriptionAvailableTenants": [],
+    "additionalProperties": [
+      {
+        "name": "subdominio",
+        "value": "finanzas-pagos",
+        "display": true
+      }
+    ],
+    "additionalPropertiesMap": {
+      "subdominio__display": {
+        "name": "subdominio",
+        "value": "finanzas-pagos",
+        "display": false
+      }
+    },
+    "accessControl": "NONE",
+    "accessControlRoles": [],
+    "businessInformation": {},
+    "corsConfiguration": {
+      "corsConfigurationEnabled": false,
+      "accessControlAllowOrigins": [
+        "*"
+      ],
+      "accessControlAllowCredentials": false,
+      "accessControlAllowHeaders": [
+        "authorization",
+        "Access-Control-Allow-Origin",
+        "Content-Type",
+        "SOAPAction",
+        "apikey",
+        "Internal-Key"
+      ],
+      "accessControlAllowMethods": [
+        "GET",
+        "PUT",
+        "POST",
+        "DELETE",
+        "PATCH",
+        "OPTIONS"
+      ]
+    },
+    "websubSubscriptionConfiguration": {
+      "enable": false,
+      "secret": "",
+      "signingAlgorithm": "SHA1",
+      "signatureHeader": "x-hub-signature"
+    },
+    "createdTime": "1764859454922",
+    "lastUpdatedTimestamp": "1764859455134",
+    "lastUpdatedTime": "2025-12-04 15:44:15.134",
+    "endpointConfig": {
+      "endpoint_type": "http",
+      "sandbox_endpoints": {
+        "url": "https://sandbox.api.domain-a.com/customers"
+      },
+      "production_endpoints": {
+        "url": "https://api.domain-a.com/customers"
+      }
+    },
+    "endpointImplementationType": "ENDPOINT",
+    "subtypeConfiguration": {
+      "subtype": "DEFAULT"
+    },
+    "scopes": [],
+    "operations": [
+      {
+        "id": "",
+        "target": "/*",
+        "verb": "GET",
+        "authType": "Application \u0026 Application User",
+        "throttlingPolicy": "Unlimited",
+        "scopes": [],
+        "usedProductIds": [],
+        "operationPolicies": {
+          "request": [],
+          "response": [],
+          "fault": []
+        }
+      },
+      {
+        "id": "",
+        "target": "/*",
+        "verb": "PUT",
+        "authType": "Application \u0026 Application User",
+        "throttlingPolicy": "Unlimited",
+        "scopes": [],
+        "usedProductIds": [],
+        "operationPolicies": {
+          "request": [],
+          "response": [],
+          "fault": []
+        }
+      },
+      {
+        "id": "",
+        "target": "/*",
+        "verb": "POST",
+        "authType": "Application \u0026 Application User",
+        "throttlingPolicy": "Unlimited",
+        "scopes": [],
+        "usedProductIds": [],
+        "operationPolicies": {
+          "request": [],
+          "response": [],
+          "fault": []
+        }
+      },
+      {
+        "id": "",
+        "target": "/*",
+        "verb": "DELETE",
+        "authType": "Application \u0026 Application User",
+        "throttlingPolicy": "Unlimited",
+        "scopes": [],
+        "usedProductIds": [],
+        "operationPolicies": {
+          "request": [],
+          "response": [],
+          "fault": []
+        }
+      },
+      {
+        "id": "",
+        "target": "/*",
+        "verb": "PATCH",
+        "authType": "Application \u0026 Application User",
+        "throttlingPolicy": "Unlimited",
+        "scopes": [],
+        "usedProductIds": [],
+        "operationPolicies": {
+          "request": [],
+          "response": [],
+          "fault": []
+        }
+      }
+    ],
+    "categories": [],
+    "keyManagers": [
+      "all"
+    ],
+    "advertiseInfo": {
+      "advertised": false,
+      "apiOwner": "admin",
+      "vendor": "WSO2"
+    },
+    "gatewayVendor": "wso2",
+    "gatewayType": "wso2/synapse",
+    "asyncTransportProtocols": [],
+    "egress": false,
+    "organizationId": "carbon.super"
+  }
+}
