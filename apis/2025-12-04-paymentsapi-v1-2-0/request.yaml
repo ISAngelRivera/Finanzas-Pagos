@@ -1,0 +1,13 @@
+request_id: 2025-12-04-paymentsapi-v1-2-0
+timestamp: 2025-12-04T14:21:04Z
+subdominio: finanzas-pagos
+source_system: wso2
+helix_crq: CRQ-MOCK-20251204142104
+api:
+  name: PaymentsAPI
+  version: 1.2.0
+  context: /payments
+  backend_url: https://api.domain-a.com/payments
+user: test-user
+source_run: https://github.com/ISAngelRivera/WSO2-Processor/actions/runs/19932192584
+processor_run: https://github.com/ISAngelRivera/GIT-Helix-Processor/actions/runs/19932195911
