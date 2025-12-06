@@ -1,0 +1,14 @@
+revision_id: 20251206-183618
+timestamp: 2025-12-06T18:36:18Z
+subdominio: finanzas-pagos
+source_system: wso2
+helix_crq: CRQ-20251206183618
+helix_status: APPROVED
+api:
+  name: InvoiceAPI
+  version: 1.0.0
+  context: /invoices
+  backend_url: https://run.mocky.io/v3/821ca9d3660eca7a69c194f67e3467b4
+user: current-user
+source_run: https://github.com/ISAngelRivera/WSO2-Processor/actions/runs/19992630847
+processor_run: https://github.com/ISAngelRivera/GIT-Helix-Processor/actions/runs/19992631812
