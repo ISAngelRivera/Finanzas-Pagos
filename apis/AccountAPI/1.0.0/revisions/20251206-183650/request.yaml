@@ -1,0 +1,14 @@
+revision_id: 20251206-183650
+timestamp: 2025-12-06T18:36:50Z
+subdominio: finanzas-pagos
+source_system: wso2
+helix_crq: CRQ-20251206183650
+helix_status: APPROVED
+api:
+  name: AccountAPI
+  version: 1.0.0
+  context: /accounts
+  backend_url: https://run.mocky.io/v3/d25c4c3e402a1f21b6f1a4978e64060b
+user: current-user
+source_run: https://github.com/ISAngelRivera/WSO2-Processor/actions/runs/19992636086
+processor_run: https://github.com/ISAngelRivera/GIT-Helix-Processor/actions/runs/19992637034
