@@ -1,0 +1,11 @@
+revision_id: rev-6
+timestamp: 2025-12-09T21:46:17Z
+subdominio: finanzas-pagos
+helix_crq: CRQ-20251209214608
+helix_status: APPROVED
+request_id: REQ-11fdaa65-miz40hjg-5woi
+api:
+  name: AccountAPI
+  version: 3.0.0
+user: admin@carbon.super
+approval_workflow: https://github.com/ISAngelRivera/GIT-Helix-Processor/actions/runs/20079539777
