@@ -1,30 +1,44 @@
-# Configuración del repositorio de dominio
-# Este archivo define metadata y políticas para este dominio/subdominio
+# =============================================================================
+# Configuración del Dominio: Finanzas / Pagos
+# =============================================================================
+#
+# Este archivo define la metadata y políticas para este repositorio de dominio.
+# Es leído por el sistema APIOps para determinar comportamiento y notificaciones.
+#
+# =============================================================================
 
 domain: Finanzas
 subdomain: Pagos
+subdominio_id: finanzas-pagos  # ID usado en WSO2 additionalProperties
 
+# -----------------------------------------------------------------------------
 # Responsables del dominio
+# -----------------------------------------------------------------------------
 owners:
   - name: Equipo Finanzas
-    email: finanzas-pagos@example.com
+    email: team-finanzas@company.com   # TODO: Actualizar con email real
     role: Domain Owner
 
+# -----------------------------------------------------------------------------
 # Notificaciones (futuro)
+# -----------------------------------------------------------------------------
 notifications:
   slack:
     enabled: false
-    channel: "#finanzas-pagos-apis"
+    channel: "#finanzas-pagos-apis"    # TODO: Configurar canal real
   email:
     enabled: true
     recipients:
-      - finanzas-pagos@example.com
+      - team-finanzas@company.com      # TODO: Actualizar con email real
 
+# -----------------------------------------------------------------------------
 # Políticas por defecto por entorno
+# -----------------------------------------------------------------------------
+# Estas políticas se aplican cuando se promociona una API a cada entorno
 default_policies:
   uat:
     rate_limiting: Gold
-    require_approval: false
+    require_approval: false            # UAT no requiere aprobación adicional
   nft:
     rate_limiting: Gold
     require_approval: true
@@ -39,14 +53,17 @@ default_policies:
       - finanzas-security
       - cab-board
 
+# -----------------------------------------------------------------------------
 # Configuración de endpoints por entorno
+# -----------------------------------------------------------------------------
+# URLs de los gateways y portales por ambiente
 environments:
   uat:
-    gateway_url: https://api-uat.example.com
-    devportal_url: https://portal-uat.example.com
+    gateway_url: https://api-uat.company.com      # TODO: URL real
+    devportal_url: https://portal-uat.company.com # TODO: URL real
   nft:
-    gateway_url: https://api-nft.example.com
-    devportal_url: https://portal-nft.example.com
+    gateway_url: https://api-nft.company.com      # TODO: URL real
+    devportal_url: https://portal-nft.company.com # TODO: URL real
   pro:
-    gateway_url: https://api.example.com
-    devportal_url: https://portal.example.com
+    gateway_url: https://api.company.com          # TODO: URL real
+    devportal_url: https://portal.company.com     # TODO: URL real
