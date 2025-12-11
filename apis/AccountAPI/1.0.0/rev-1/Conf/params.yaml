@@ -1,0 +1,90 @@
+# =============================================================================
+# AccountAPI 1.0.0 - Configuración por Entorno
+# =============================================================================
+# Formato: WSO2 apictl params.yaml nativo
+# =============================================================================
+
+environments:
+  # ---------------------------------------------------------------------------
+  # UAT - Desarrollo/Testing
+  # ---------------------------------------------------------------------------
+  - name: uat
+    configs:
+      endpoints:
+        production:
+          url: https://run.mocky.io/v3/e89bceb2d9bb9e866c3c6cd99768e994
+          config:
+            retryTimeOut: 2
+            retryDelay: 500
+            suspendDuration: 10000
+            suspendMaxDuration: 30000
+
+      security:
+        production:
+          enabled: false
+
+      certs: []
+      mutualSslCerts: []
+
+      policies:
+        - Gold
+
+      deploymentEnvironments:
+        - displayOnDevportal: true
+          deploymentEnvironment: Default
+
+  # ---------------------------------------------------------------------------
+  # NFT - Pre-producción
+  # ---------------------------------------------------------------------------
+  - name: nft
+    configs:
+      endpoints:
+        production:
+          url: https://run.mocky.io/v3/e89bceb2d9bb9e866c3c6cd99768e994
+          config:
+            retryTimeOut: 3
+            retryDelay: 1000
+            suspendDuration: 30000
+            suspendMaxDuration: 60000
+
+      security:
+        production:
+          enabled: false
+
+      certs: []
+      mutualSslCerts: []
+
+      policies:
+        - Platinum
+
+      deploymentEnvironments:
+        - displayOnDevportal: true
+          deploymentEnvironment: Default
+
+  # ---------------------------------------------------------------------------
+  # PRO - Producción
+  # ---------------------------------------------------------------------------
+  - name: pro
+    configs:
+      endpoints:
+        production:
+          url: https://run.mocky.io/v3/e89bceb2d9bb9e866c3c6cd99768e994
+          config:
+            retryTimeOut: 5
+            retryDelay: 2000
+            suspendDuration: 60000
+            suspendMaxDuration: 300000
+
+      security:
+        production:
+          enabled: false
+
+      certs: []
+      mutualSslCerts: []
+
+      policies:
+        - Unlimited
+
+      deploymentEnvironments:
+        - displayOnDevportal: true
+          deploymentEnvironment: Default

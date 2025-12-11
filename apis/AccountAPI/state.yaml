@@ -1,0 +1,29 @@
+# =============================================================================
+# AccountAPI - Estado de Deployments por Entorno
+# =============================================================================
+# ARCHIVO AUTO-GENERADO por GIT-Helix-Processor
+# NO EDITAR MANUALMENTE
+# =============================================================================
+
+api_name: AccountAPI
+last_updated: 2025-12-11T11:55:33Z
+
+# Estado actual en cada entorno
+environments:
+  uat:
+    version: null
+    revision: null
+    status: NOT_DEPLOYED
+
+  nft:
+    version: null
+    revision: null
+    status: NOT_DEPLOYED
+
+  pro:
+    version: null
+    revision: null
+    status: NOT_DEPLOYED
+
+# Historial de operaciones
+history: []
