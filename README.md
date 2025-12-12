@@ -1,4 +1,4 @@
-# Finanzas-Pagos
+# apim-domain-finanzas
 
 Repositorio Git para almacenamiento de APIs del dominio **Finanzas / Pagos**.
 
@@ -9,7 +9,7 @@ Este repositorio almacena las definiciones de APIs que pertenecen al subdominio 
 ## Estructura
 
 ```
-Finanzas-Pagos/
+apim-domain-finanzas/
 ├── apis/
 │   └── {APIName}/
 │       └── {Version}/
